@@ -7,3 +7,26 @@
 *.svn-base
 .svn/wc.db
 target
+
+
+*.ipr
+*.iws
+*.iml
+*.class
+*.zip
+
+# ignore target directory.Don't ignore target files.
+target/
+log/
+**/log
+logs/
+**/logs
+**/target
+out/
+.idea/
+
+# Package Files #
+#ignore all .jar files;
+*.jar
+*.war
+*.ear

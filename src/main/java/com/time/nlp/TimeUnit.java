@@ -1,5 +1,7 @@
 package com.time.nlp;
 
+import com.time.enums.RangeTimeEnum;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -7,8 +9,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import com.time.enums.RangeTimeEnum;
 
 /**
  * <p>

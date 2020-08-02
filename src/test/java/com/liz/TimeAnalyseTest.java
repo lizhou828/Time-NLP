@@ -50,6 +50,26 @@ public class TimeAnalyseTest {
         System.out.println("早上六点起床");
         System.out.println(DateUtil.formatDateDefault(unit[0].getTime()) + "-" + unit[0].getIsAllDayTime());
 
+        normalizer.parse("中午买菜花了100块钱");
+        unit = normalizer.getTimeUnit();
+        System.out.println("中午买菜花了100块钱");
+        System.out.println(DateUtil.formatDateDefault(unit[0].getTime()) + "-" + unit[0].getIsAllDayTime());
+
+        normalizer.parse("晚上聚餐花了303块钱");
+        unit = normalizer.getTimeUnit();
+        System.out.println("晚上聚餐花了303块钱");
+        System.out.println(DateUtil.formatDateDefault(unit[0].getTime()) + "-" + unit[0].getIsAllDayTime());
+
+        normalizer.parse("昨晚聚餐花了303块钱");
+        unit = normalizer.getTimeUnit();
+        System.out.println("昨晚聚餐花了303块钱");
+        System.out.println(DateUtil.formatDateDefault(unit[0].getTime()) + "-" + unit[0].getIsAllDayTime());
+
+        normalizer.parse("前天上午体检花了194块钱");
+        unit = normalizer.getTimeUnit();
+        System.out.println("前天上午体检花了194块钱");
+        System.out.println(DateUtil.formatDateDefault(unit[0].getTime()) + "-" + unit[0].getIsAllDayTime());
+
         normalizer.parse("周一开会");// 如果本周已经是周二，识别为下周周一。同理处理各级时间。（未来倾向）
         unit = normalizer.getTimeUnit();
         System.out.println("周一开会");
